@@ -3,6 +3,8 @@ const assert = require('assert')
 const chalk = require('chalk')
 const Q = require('q')
 const cheerio = require('cheerio')
+const fs = require('fs')
+const path = require('path')
 const Page = require('./page')
 
 class Etherscan {
@@ -10,7 +12,7 @@ class Etherscan {
     this.contractList = new Page({
       url: 'https://etherscan.io/contractsVerified/',
       curPageNumber: 0,
-      lastPageNumber: 1,
+      lastPageNumber: 20,
     })
     this.contractAsset = new Page({
       url: 'https://etherscan.io/txs?a='
@@ -32,6 +34,7 @@ class Etherscan {
   }
 
   async crawle() {
+    const contractsDir = path.join(__dirname, '../../contracts')
     while (this.contractList.hasNext()) {
       const addresses = []
       const contractListURL = this.contractList.nextPage()
@@ -56,6 +59,10 @@ class Etherscan {
         })
         /// access smart contract which has number of transactions <= 10
         if (transactionIds.length <= 10) {
+          const writeContent = {
+            address,
+            transactions: [],
+          }
           for (let j = 0; j < transactionIds.length; j++) {
             const transactionId = transactionIds[j]
             const transactionDetailURL = this.transactionDetail.nextPageWithParam(transactionId)
@@ -63,9 +70,46 @@ class Etherscan {
             const $ = cheerio.load(body)
             const transactionPayloads = []
             const payload = $('#rawinput').text()
-            console.log(payload)
-            process.exit()
+            const value = parseFloat(
+              $('.u-label--value')
+              .text()
+              .split(' ')[0]
+            )
+            assert(!isNaN(value))
+            const gasLimit = parseFloat(
+              $('#ContentPlaceHolder1_spanGasLimit')
+              .text()
+              .replace(/,/g, '')
+            )
+            assert(!isNaN(gasLimit))
+            const gasUsed = parseFloat(
+              $('#ContentPlaceHolder1_spanGasUsedByTxn')
+              .text()
+              .split(' ')[0]
+              .replace(/,/g, '')
+            )
+            assert(!isNaN(gasUsed))
+            const gasPrice = parseFloat(
+              $('#ContentPlaceHolder1_spanGasPrice')
+              .text()
+              .split(' ')[0]
+              .replace(/,/g, '')
+            )
+            assert(!isNaN(gasPrice))
+            writeContent.transactions.unshift({
+              payload,
+              value,
+              gasLimit,
+              gasPrice,
+              gasUsed,
+            })
           }
+          /// write file to contracts dir
+          const jsonFormat = JSON.stringify(writeContent, null, 2)
+          const filename = `${writeContent.address}.json`
+          const filepath = path.join(contractsDir, filename)
+          fs.writeFileSync(filepath, jsonFormat)
+          console.log(chalk.green(`>> write to file ${filename}`))
         }
       }
     }
