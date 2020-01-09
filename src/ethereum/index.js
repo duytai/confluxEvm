@@ -6,6 +6,7 @@ const path = require('path')
 const fs = require('fs')
 const EthereumTx = require('ethereumjs-tx').Transaction
 const util = require('ethereumjs-util')
+const sleep = require('sleep')
 
 class Ethereum {
   constructor() {
@@ -30,6 +31,13 @@ class Ethereum {
         assert(resp.body)
         resolve(resp.body)
       })
+    })
+  }
+
+  async getBalance() {
+    return await this.httpPost({
+      method: 'eth_getBalance',
+      params: [this.address],
     })
   }
 
@@ -71,27 +79,43 @@ class Ethereum {
   }
 
   async sendTransactions() {
+    let pastBalance = await this.getBalance()
+    pastBalance = parseInt(pastBalance.result)
+    console.log(chalk.green.bold(`balance: ${pastBalance}`))
     const contractFiles = fs
       .readdirSync(this.contractsDir)
       .map(p => path.join(this.contractsDir, p))
-      .slice(0, 1)
+      .slice(0, 10)
     let contractAddress = null
     for (let i = 0; i < contractFiles.length; i ++) {
-      console.log(chalk.green.bold(`f: ${contractFiles[i].slice(-47)}`))
-      const jsonFormat = JSON.parse(fs.readFileSync(contractFiles[i], 'utf8'))
-      const { transactions } = jsonFormat
-      for (let j = 0; j < transactions.length; j ++) {
-        const transaction = transactions[j]
-        const hash = await this.sendTransaction(transaction, contractAddress)
-        assert(hash)
-        const receipt = await this.getReceipt(hash)
-        assert(receipt)
-        contractAddress = receipt.result.contractAddress || contractAddress
-        const { result: { gasUsed } } = receipt
-        assert(gasUsed)
-        console.log(gasUsed)
+      try {
+        console.log(chalk.green.bold(`f: ${contractFiles[i].slice(-47)}`))
+        const jsonFormat = JSON.parse(fs.readFileSync(contractFiles[i], 'utf8'))
+        const { transactions } = jsonFormat
+        for (let j = 0; j < transactions.length; j ++) {
+          const transaction = transactions[j]
+          const hash = await this.sendTransaction(transaction, contractAddress)
+          assert(hash)
+          let receipt = null
+          while (!receipt) {
+            sleep.sleep(1)
+            receipt = await this.getReceipt(hash)
+          }
+          assert(receipt)
+          contractAddress = receipt.result.contractAddress || contractAddress
+          const { result: { gasUsed } } = receipt
+          assert(gasUsed)
+          console.log(gasUsed)
+        }
+      } catch (e) {
+        // console.log(e)
       }
     }
+    let currentBalance = await this.getBalance()
+    currentBalance = parseInt(currentBalance.result)
+    console.log(chalk.green.bold(`balance: ${currentBalance}`))
+    const spend = pastBalance - currentBalance 
+    console.log(chalk.green.bold(`spend: ${spend}`))
   }
 }
 

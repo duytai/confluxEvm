@@ -1,0 +1,34 @@
+
+> confluxEvm@1.0.0 eth /home/worm/Projects/confluxEvm
+> MODE=ethereum node src/index.js
+
+balance: 99999999999590580000
+f: 0x03b1565e070df392e48e7a8e01798C4B00E534A5.json
+0x2a81e3
+0xab52
+f: 0x04D4a97995EfE3E26A5AF389a4af82732964Bd31.json
+f: 0x06f41c1c8a9904cbcc9d5f9b6b0a025b82588039.json
+0x4e2cf
+f: 0x0a1ab3441a56be6e5baa6cbb423e6cc66c951226.json
+0x860db
+0x5aa6
+f: 0x0e2EF074C1a772f93D57E199d3570daB67a37BF2.json
+0x960af
+f: 0x0fa8b36d8c2f47548778893fbb41a47a12bfda61.json
+0x8f13
+0x5590
+f: 0x0fb87187b8f32af1113e514bd577a1acf3a19b46.json
+0xeebb
+0x5410
+0x5410
+f: 0x104312cfa88b77304127f8033e4efa926ac5dacf.json
+0x117ebb
+0x5ae7
+f: 0x105c293880af722a8e79ca4611a4fe4f3760a13e.json
+0x2ea87
+0x5c27
+f: 0x11105d1fbc4c8ad6f0280a0b52b8091232fb7363.json
+0xd2213
+balance: 99999999999566870000
+spend: 23707648
+>> Done
