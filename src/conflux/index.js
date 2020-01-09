@@ -5,13 +5,14 @@ const Q = require('q')
 const path = require('path')
 const fs = require('fs')
 const ConfluxTx= require('confluxjs-transaction')
+const sleep = require('sleep')
 const util = require('ethereumjs-util')
 
 class Conflux {
   constructor() {
     this.rpcURL = 'http://10.27.36.29:10011'
     this.privateKey = Buffer.from(
-      '9b230bf609770025a17e26b55602580476e45fb4426267b1f0d394d48e4dbd6b',
+      '46b9e861b63d3509c88b7817275a30d22d62c8cd8fa6486ddee35ef0d8e0495f',
       'hex'
     )
     this.contractsDir = path.join(__dirname, '../../contracts')
@@ -37,7 +38,14 @@ class Conflux {
   async getTransactionCount() {
     return await this.httpPost({
       method: 'cfx_getTransactionCount',
-      params: [this.address],
+      params: [this.address, 'latest_state'],
+    })
+  }
+
+  async getReceipt(transactionHash) {
+    return await this.httpPost({
+      method: 'cfx_getTransactionReceipt',
+      params: [transactionHash]
     })
   }
 
@@ -55,11 +63,11 @@ class Conflux {
     const tx = new ConfluxTx(txParams)
     tx.sign(this.privateKey)
     const serializedTx = tx.serialize().toString('hex')
-    const result = await this.httpPost({
+    const txHash = await this.httpPost({
       method: 'cfx_sendRawTransaction',
       params: [`0x${serializedTx}`]
     })
-    console.log(result)
+    return txHash.result
   }
 
   async sendTransactions() {
@@ -72,7 +80,16 @@ class Conflux {
       const { transactions } = jsonFormat
       for (let j = 0; j < transactions.length; j ++) {
         const transaction = transactions[i]
-        await this.sendTransaction(transaction)
+        const hash = await this.sendTransaction(transaction)
+        let receipt = null
+        while (!receipt) {
+          sleep.sleep(1)
+          receipt = await this.getReceipt(hash)
+        }
+        assert(receipt)
+        const { result: { gasUsed } } = receipt
+        assert(gasUsed)
+        console.log(gasUsed)
         process.exit()
       }
     }

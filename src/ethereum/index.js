@@ -80,7 +80,9 @@ class Ethereum {
       for (let j = 0; j < transactions.length; j ++) {
         const transaction = transactions[i]
         const hash = await this.sendTransaction(transaction)
+        assert(hash)
         const receipt = await this.getReceipt(hash)
+        assert(receipt)
         const { result: { gasUsed } } = receipt
         assert(gasUsed)
         console.log(gasUsed)
