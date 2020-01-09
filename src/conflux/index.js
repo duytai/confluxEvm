@@ -49,11 +49,12 @@ class Conflux {
     })
   }
 
-  async sendTransaction(transaction) {
+  async sendTransaction(transaction, contractAddress) {
     const { payload, gasPrice, gasLimit, value } = transaction
     const txCount = await this.getTransactionCount()
     assert(txCount.result)
     const txParams = {
+      to: contractAddress,
       nonce: txCount.result,
       gasPrice: gasPrice * 1e9,
       gasLimit,
@@ -75,22 +76,24 @@ class Conflux {
       .readdirSync(this.contractsDir)
       .map(p => path.join(this.contractsDir, p))
       .slice(0, 1)
+    let contractAddress = null
     for (let i = 0; i < contractFiles.length; i ++) {
+      console.log(chalk.green.bold(`f: ${contractFiles[i].slice(-47)}`))
       const jsonFormat = JSON.parse(fs.readFileSync(contractFiles[i], 'utf8'))
       const { transactions } = jsonFormat
       for (let j = 0; j < transactions.length; j ++) {
-        const transaction = transactions[i]
-        const hash = await this.sendTransaction(transaction)
+        const transaction = transactions[j]
+        const hash = await this.sendTransaction(transaction, contractAddress)
         let receipt = null
         while (!receipt) {
           sleep.sleep(1)
           receipt = await this.getReceipt(hash)
         }
         assert(receipt)
+        contractAddress = receipt.result.contractCreated || contractAddress
         const { result: { gasUsed } } = receipt
         assert(gasUsed)
         console.log(gasUsed)
-        process.exit()
       }
     }
   }
