@@ -10,7 +10,8 @@ const util = require('ethereumjs-util')
 
 class Conflux {
   constructor() {
-    this.rpcURL = 'http://10.27.36.29:10011'
+    this.rpcURL = 'http://testnet-jsonrpc.conflux-chain.org:12537'
+    // this.rpcURL = 'http://10.27.36.29:10011'
     this.privateKey = Buffer.from(
       '46b9e861b63d3509c88b7817275a30d22d62c8cd8fa6486ddee35ef0d8e0495f',
       'hex'
@@ -82,12 +83,14 @@ class Conflux {
     let pastBalance = await this.getBalance()
     pastBalance = parseInt(pastBalance.result)
     console.log(chalk.green.bold(`balance: ${pastBalance}`))
+    console.log(this.address)
+    return
     const contractFiles = fs
       .readdirSync(this.contractsDir)
       .map(p => path.join(this.contractsDir, p))
       .slice(0, 10)
-    let contractAddress = null
     for (let i = 0; i < contractFiles.length; i ++) {
+      let contractAddress = null
       try {
         console.log(chalk.green.bold(`f: ${contractFiles[i].slice(-47)}`))
         const jsonFormat = JSON.parse(fs.readFileSync(contractFiles[i], 'utf8'))
@@ -95,12 +98,12 @@ class Conflux {
         for (let j = 0; j < transactions.length; j ++) {
           const transaction = transactions[j]
           const hash = await this.sendTransaction(transaction, contractAddress)
-          let receipt = null
-          while (!receipt) {
+          let receipt = { result: null }
+          while (!receipt.result) {
             sleep.sleep(1)
             receipt = await this.getReceipt(hash)
           }
-          assert(receipt)
+          assert(receipt.result)
           contractAddress = receipt.result.contractCreated || contractAddress
           const { result: { gasUsed } } = receipt
           assert(gasUsed)

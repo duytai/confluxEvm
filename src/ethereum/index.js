@@ -82,12 +82,13 @@ class Ethereum {
     let pastBalance = await this.getBalance()
     pastBalance = parseInt(pastBalance.result)
     console.log(chalk.green.bold(`balance: ${pastBalance}`))
+    return
     const contractFiles = fs
       .readdirSync(this.contractsDir)
       .map(p => path.join(this.contractsDir, p))
       .slice(0, 10)
-    let contractAddress = null
     for (let i = 0; i < contractFiles.length; i ++) {
+      let contractAddress = null
       try {
         console.log(chalk.green.bold(`f: ${contractFiles[i].slice(-47)}`))
         const jsonFormat = JSON.parse(fs.readFileSync(contractFiles[i], 'utf8'))
@@ -96,12 +97,12 @@ class Ethereum {
           const transaction = transactions[j]
           const hash = await this.sendTransaction(transaction, contractAddress)
           assert(hash)
-          let receipt = null
-          while (!receipt) {
+          let receipt = { result: null }
+          while (!receipt.result) {
             sleep.sleep(1)
             receipt = await this.getReceipt(hash)
           }
-          assert(receipt)
+          assert(receipt.result)
           contractAddress = receipt.result.contractAddress || contractAddress
           const { result: { gasUsed } } = receipt
           assert(gasUsed)
