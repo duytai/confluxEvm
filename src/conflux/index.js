@@ -51,6 +51,7 @@ class Conflux {
   }
 
   async sendTransaction(transaction, contractAddress) {
+    console.log(`to: ${contractAddress}`)
     const { payload, gasPrice, gasLimit, value } = transaction
     const txCount = await this.getTransactionCount()
     assert(txCount.result)
@@ -84,7 +85,6 @@ class Conflux {
     pastBalance = parseInt(pastBalance.result)
     console.log(chalk.green.bold(`balance: ${pastBalance}`))
     console.log(this.address)
-    return
     const contractFiles = fs
       .readdirSync(this.contractsDir)
       .map(p => path.join(this.contractsDir, p))
@@ -102,6 +102,7 @@ class Conflux {
           while (!receipt.result) {
             sleep.sleep(1)
             receipt = await this.getReceipt(hash)
+            console.log(receipt)
           }
           assert(receipt.result)
           contractAddress = receipt.result.contractCreated || contractAddress
