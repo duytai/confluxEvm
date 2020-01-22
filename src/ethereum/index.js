@@ -62,7 +62,7 @@ class Ethereum {
     const txParams = {
       to: contractAddress,
       nonce: txCount.result,
-      gasPrice: gasPrice * 1e9,
+      gasPrice: (gasPrice + 1) * 1e9,
       gasLimit,
       value,
       data: payload,

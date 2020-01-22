@@ -58,7 +58,7 @@ class Conflux {
     const txParams = {
       to: contractAddress,
       nonce: txCount.result,
-      gasPrice: gasPrice * 1e9,
+      gasPrice: (gasPrice + 1) * 1e9,
       gasLimit,
       value,
       data: payload,
@@ -70,6 +70,7 @@ class Conflux {
       method: 'cfx_sendRawTransaction',
       params: [`0x${serializedTx}`]
     })
+    // console.log(txHash)
     return txHash.result
   }
 
@@ -84,35 +85,40 @@ class Conflux {
     let pastBalance = await this.getBalance()
     pastBalance = parseInt(pastBalance.result)
     console.log(chalk.green.bold(`balance: ${pastBalance}`))
-    console.log(this.address)
+    // console.log(this.address)
     const contractFiles = fs
       .readdirSync(this.contractsDir)
       .map(p => path.join(this.contractsDir, p))
       .slice(0, 10)
-    for (let i = 0; i < contractFiles.length; i ++) {
+    let idx = 0 
+    while (idx < contractFiles.length) {
       let contractAddress = null
-      try {
-        console.log(chalk.green.bold(`f: ${contractFiles[i].slice(-47)}`))
-        const jsonFormat = JSON.parse(fs.readFileSync(contractFiles[i], 'utf8'))
-        const { transactions } = jsonFormat
-        for (let j = 0; j < transactions.length; j ++) {
-          const transaction = transactions[j]
-          const hash = await this.sendTransaction(transaction, contractAddress)
-          let receipt = { result: null }
-          while (!receipt.result) {
-            sleep.sleep(1)
-            receipt = await this.getReceipt(hash)
-            console.log(receipt)
-          }
-          assert(receipt.result)
-          contractAddress = receipt.result.contractCreated || contractAddress
-          const { result: { gasUsed } } = receipt
-          assert(gasUsed)
-          console.log(gasUsed)
+      console.log(chalk.green.bold(`f: ${contractFiles[idx].slice(-47)} : ${idx}`))
+      const jsonFormat = JSON.parse(fs.readFileSync(contractFiles[idx], 'utf8'))
+      const { transactions } = jsonFormat
+      let txIdx = 0
+      while (txIdx < transactions.length) {
+        const transaction = transactions[txIdx]
+        const hash = await this.sendTransaction(transaction, contractAddress)
+        if (!hash) {
+          // console.log(`no hash`)
+          sleep.sleep(1)
+          continue
+        } 
+        let receipt = { result: null }
+        while (!receipt.result) {
+          sleep.sleep(1)
+          receipt = await this.getReceipt(hash)
+          console.log(receipt)
         }
-      } catch (e) {
-        // console.log(e)
+        assert(receipt.result)
+        contractAddress = receipt.result.contractCreated || contractAddress
+        const { result: { gasUsed } } = receipt
+        assert(gasUsed)
+        console.log(gasUsed)
+        txIdx ++
       }
+      idx ++
     }
     let currentBalance = await this.getBalance()
     currentBalance = parseInt(currentBalance.result)
