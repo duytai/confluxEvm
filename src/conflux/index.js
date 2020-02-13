@@ -12,6 +12,7 @@ class Conflux {
   constructor() {
     this.rpcURL = 'http://testnet-jsonrpc.conflux-chain.org:12537'
     // this.rpcURL = 'http://10.27.36.29:10011'
+    // this.rpcURL = 'http://127.0.0.1:10011'
     this.privateKey = Buffer.from(
       '46b9e861b63d3509c88b7817275a30d22d62c8cd8fa6486ddee35ef0d8e0495f',
       'hex'
@@ -70,7 +71,6 @@ class Conflux {
       method: 'cfx_sendRawTransaction',
       params: [`0x${serializedTx}`]
     })
-    // console.log(txHash)
     return txHash.result
   }
 
@@ -85,11 +85,10 @@ class Conflux {
     let pastBalance = await this.getBalance()
     pastBalance = parseInt(pastBalance.result)
     console.log(chalk.green.bold(`balance: ${pastBalance}`))
-    // console.log(this.address)
     const contractFiles = fs
       .readdirSync(this.contractsDir)
       .map(p => path.join(this.contractsDir, p))
-      .slice(0, 10)
+      .slice(0, 1)
     let idx = 0 
     while (idx < contractFiles.length) {
       let contractAddress = null
@@ -109,8 +108,8 @@ class Conflux {
         while (!receipt.result) {
           sleep.sleep(1)
           receipt = await this.getReceipt(hash)
-          console.log(receipt)
         }
+        console.log(receipt)
         assert(receipt.result)
         contractAddress = receipt.result.contractCreated || contractAddress
         const { result: { gasUsed } } = receipt

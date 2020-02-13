@@ -10,7 +10,8 @@ const sleep = require('sleep')
 
 class Ethereum {
   constructor() {
-    this.rpcURL = 'http://127.0.0.1:7545'
+    // this.rpcURL = 'http://127.0.0.1:10011'
+    this.rpcURL = 'http://testnet-jsonrpc.conflux-chain.org:12537'
     this.privateKey = Buffer.from(
       '9b230bf609770025a17e26b55602580476e45fb4426267b1f0d394d48e4dbd6b',
       'hex'
@@ -82,11 +83,10 @@ class Ethereum {
     let pastBalance = await this.getBalance()
     pastBalance = parseInt(pastBalance.result)
     console.log(chalk.green.bold(`balance: ${pastBalance}`))
-    return
     const contractFiles = fs
       .readdirSync(this.contractsDir)
       .map(p => path.join(this.contractsDir, p))
-      .slice(0, 10)
+      .slice(10, 20)
     for (let i = 0; i < contractFiles.length; i ++) {
       let contractAddress = null
       try {
@@ -101,6 +101,7 @@ class Ethereum {
           while (!receipt.result) {
             sleep.sleep(1)
             receipt = await this.getReceipt(hash)
+            console.log(receipt)
           }
           assert(receipt.result)
           contractAddress = receipt.result.contractAddress || contractAddress
@@ -109,7 +110,7 @@ class Ethereum {
           console.log(gasUsed)
         }
       } catch (e) {
-        // console.log(e)
+        console.log(e)
       }
     }
     let currentBalance = await this.getBalance()
