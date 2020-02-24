@@ -9,6 +9,7 @@
     "cfx": "MODE=conflux node src/index.js"
   },
   "dependencies": {
+    "bn.js": "^5.1.1",
     "chalk": "^3.0.0",
     "cheerio": "^1.0.0-rc.3",
     "confluxjs-transaction": "^0.0.1-alpha.2",
