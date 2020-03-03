@@ -75,7 +75,7 @@ class Conflux {
       to: contractAddress,
       nonce: txCount.result,
       gasPrice: gasPrice * 1e18, 
-      value: value * 1e10,
+      value: 0,
       gasLimit: gasLimit * 1e1,
       data: payload,
     }
@@ -138,7 +138,7 @@ class Conflux {
         contractAddress = receipt.result.contractCreated || contractAddress
         const gasUsed = new BN(receipt.result.gasUsed.slice(2), 16)
         const gasPrice = new BN(transaction.gasPrice * 1e18)
-        const value = new BN(transaction.value * 1e10)
+        const value = new BN(0)
         const gasLimit = new BN(transaction.gasLimit * 1e1)
         const used = gasUsed.mul(gasPrice)
         allUsed = allUsed.add(used)
