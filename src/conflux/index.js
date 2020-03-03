@@ -5,11 +5,13 @@ const Q = require('q')
 const path = require('path')
 const BN = require('bn.js')
 const fs = require('fs')
+const { createLogger, format, transports } = require('winston')
 const ConfluxTx= require('confluxjs-transaction')
 const sleep = require('sleep')
 const util = require('ethereumjs-util')
 const dotenv = require('dotenv')
 
+const { combine, timestamp, label, prettyPrint, printf } = format
 const { parsed: { CFX_REMOTE, CFX_PRIVATE_KEY } } = dotenv.config()
 assert(CFX_REMOTE && CFX_PRIVATE_KEY, `update .env file`)
 
@@ -19,6 +21,20 @@ class Conflux {
     this.privateKey = Buffer.from(CFX_PRIVATE_KEY, 'hex')
     this.contractsDir = path.join(__dirname, '../../contracts')
     this.address = `0x${util.privateToAddress(this.privateKey).toString('hex')}`
+    this.logger = createLogger({
+      format: combine(
+        format.colorize(),
+        label({ label: 'conflux' }),
+        timestamp(),
+        printf(({ level, message, label }) => {
+          return `[${label}] ${level}: ${message}`
+        }),
+      ),
+      transports: [
+        new (transports.Console)({ level: 'debug' }),
+        new transports.File({ filename: 'logs/conflux.log', level: 'debug' })
+      ]
+    })
   }
 
   httpPost(data) {
@@ -83,26 +99,30 @@ class Conflux {
   async sendTransactions() {
     let pastBalance = await this.getBalance()
     pastBalance = new BN(pastBalance.result.slice(2), 16)
-    console.log(`balance: ${pastBalance}`)
+    this.logger.info(`balance: ${pastBalance}`)
     const contractFiles = fs
       .readdirSync(this.contractsDir)
       .map(p => path.join(this.contractsDir, p))
-    let idx = 0 
+    let contractCount = 0 
+    let txCount = 0
     let allUsed = new BN(0)
-    while (idx < contractFiles.length) {
+    while (contractCount < contractFiles.length) {
       let contractAddress = null
-      console.log(`\ttransaction: ${contractFiles[idx].slice(-47).slice(0, -5)}`)
-      const jsonFormat = JSON.parse(fs.readFileSync(contractFiles[idx], 'utf8'))
+      this.logger.info(`\ttransact : ${contractFiles[contractCount].slice(-47).slice(0, -5)}`)
+      const jsonFormat = JSON.parse(fs.readFileSync(contractFiles[contractCount], 'utf8'))
       const { transactions } = jsonFormat
       let txIdx = 0
       while (txIdx < transactions.length) {
+        txCount ++
         const transaction = transactions[txIdx]
-        console.log(`\tto: ${contractAddress}`)
-        console.log(`\tsig: ${transaction.payload.slice(0, 10)}`)
+        this.logger.info(`\tcontract : ${contractCount}`)
+        this.logger.info(`\ttransact : ${txCount}`)
+        this.logger.info(`\tto       : ${contractAddress}`)
+        this.logger.info(`\tsig      : ${transaction.payload.slice(0, 10)}`)
         const r = await this.sendTransaction(transaction, contractAddress)
         const hash = r.result
         if (r.error) {
-          console.log(`ERROR: ${r.error.message}`)
+          this.logger.info(`ERROR: ${r.error.message}`)
           txIdx ++
           continue
         }
@@ -122,22 +142,22 @@ class Conflux {
         const gasLimit = new BN(transaction.gasLimit * 1e1)
         const used = gasUsed.mul(gasPrice)
         allUsed = allUsed.add(used)
-        console.log(`\tgasUsed  : ${gasUsed}`)
-        console.log(`\tgasLimit : ${gasLimit}`)
-        console.log(`\tgasPrice : ${gasPrice}`)
-        console.log(`\tvalue    : ${value}`)
-        console.log(`\tspend    : ${used}`)
-        console.log('\t---------------------')
+        this.logger.info(`\tgasUsed  : ${gasUsed}`)
+        this.logger.info(`\tgasLimit : ${gasLimit}`)
+        this.logger.info(`\tgasPrice : ${gasPrice}`)
+        this.logger.info(`\tvalue    : ${value}`)
+        this.logger.info(`\tspend    : ${used}`)
+        this.logger.info('\t---------------------')
         txIdx ++
       }
-      idx ++
+      contractCount ++
     }
     let currentBalance = await this.getBalance()
     currentBalance = new BN(currentBalance.result.slice(2), 16)
-    console.log(`balance: ${currentBalance}`)
+    this.logger.info(`balance: ${currentBalance}`)
     const spend = pastBalance.sub(currentBalance)
-    console.log(`real Spend   : ${spend}`)
-    console.log(`manual Spend : ${allUsed}`)
+    this.logger.info(`real Spend   : ${spend}`)
+    this.logger.info(`manual Spend : ${allUsed}`)
   }
 }
 
