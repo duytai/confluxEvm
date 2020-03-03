@@ -59,8 +59,8 @@ class Conflux {
       to: contractAddress,
       nonce: txCount.result,
       gasPrice: gasPrice * 1e18, 
-      value: value * 1e18,
-      gasLimit: gasLimit,
+      value: value * 1e10,
+      gasLimit: gasLimit * 1e1,
       data: payload,
     }
     const tx = new ConfluxTx(txParams)
@@ -70,7 +70,7 @@ class Conflux {
       method: 'cfx_sendRawTransaction',
       params: [`0x${serializedTx}`]
     })
-    return txHash.result
+    return txHash
   }
 
   async getBalance() {
@@ -87,7 +87,6 @@ class Conflux {
     const contractFiles = fs
       .readdirSync(this.contractsDir)
       .map(p => path.join(this.contractsDir, p))
-      .slice(0, 1)
     let idx = 0 
     let allUsed = new BN(0)
     while (idx < contractFiles.length) {
@@ -99,7 +98,14 @@ class Conflux {
       while (txIdx < transactions.length) {
         const transaction = transactions[txIdx]
         console.log(`\tto: ${contractAddress}`)
-        const hash = await this.sendTransaction(transaction, contractAddress)
+        console.log(`\tsig: ${transaction.payload.slice(0, 10)}`)
+        const r = await this.sendTransaction(transaction, contractAddress)
+        const hash = r.result
+        if (r.error) {
+          console.log(`ERROR: ${r.error.message}`)
+          txIdx ++
+          continue
+        }
         if (!hash) {
           sleep.sleep(1)
           continue
@@ -112,15 +118,15 @@ class Conflux {
         contractAddress = receipt.result.contractCreated || contractAddress
         const gasUsed = new BN(receipt.result.gasUsed.slice(2), 16)
         const gasPrice = new BN(transaction.gasPrice * 1e18)
-        const value = new BN(transaction.value * 1e18)
-        const gasLimit = new BN(transaction.gasLimit)
+        const value = new BN(transaction.value * 1e10)
+        const gasLimit = new BN(transaction.gasLimit * 1e1)
         const used = gasUsed.mul(gasPrice)
         allUsed = allUsed.add(used)
         console.log(`\tgasUsed  : ${gasUsed}`)
+        console.log(`\tgasLimit : ${gasLimit}`)
         console.log(`\tgasPrice : ${gasPrice}`)
         console.log(`\tvalue    : ${value}`)
         console.log(`\tspend    : ${used}`)
-        console.log(`\tlimit    : ${gasLimit}`)
         console.log('\t---------------------')
         txIdx ++
       }
