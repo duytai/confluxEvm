@@ -8,15 +8,15 @@ const fs = require('fs')
 const ConfluxTx= require('confluxjs-transaction')
 const sleep = require('sleep')
 const util = require('ethereumjs-util')
+const dotenv = require('dotenv')
+
+const { parsed: { CFX_REMOTE, CFX_PRIVATE_KEY } } = dotenv.config()
+assert(CFX_REMOTE && CFX_PRIVATE_KEY, `update .env file`)
 
 class Conflux {
   constructor() {
-    this.rpcURL = 'http://testnet-jsonrpc.conflux-chain.org:12537'
-    // this.rpcURL = 'http://127.0.0.1:10011'
-    this.privateKey = Buffer.from(
-      '46b9e861b63d3509c88b7817275a30d22d62c8cd8fa6486ddee35ef0d8e0495f',
-      'hex'
-    )
+    this.rpcURL = CFX_REMOTE
+    this.privateKey = Buffer.from(CFX_PRIVATE_KEY, 'hex')
     this.contractsDir = path.join(__dirname, '../../contracts')
     this.address = `0x${util.privateToAddress(this.privateKey).toString('hex')}`
   }
