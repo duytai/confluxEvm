@@ -89,7 +89,7 @@ class Conflux {
       .map(p => path.join(this.contractsDir, p))
       .slice(0, 1)
     let idx = 0 
-    let allUsed = new BN('00', 16)
+    let allUsed = new BN(0)
     while (idx < contractFiles.length) {
       let contractAddress = null
       console.log(`\ttransaction: ${contractFiles[idx].slice(-47).slice(0, -5)}`)
@@ -111,9 +111,9 @@ class Conflux {
         }
         contractAddress = receipt.result.contractCreated || contractAddress
         const gasUsed = new BN(receipt.result.gasUsed.slice(2), 16)
-        const gasPrice = new BN(Number(Math.floor(transaction.gasPrice * 1e18)).toString(16), 16)
-        const value = new BN(Number(transaction.value * 1e18).toString(16), 16)
-        const gasLimit = new BN(Number(transaction.gasLimit).toString(16), 16)
+        const gasPrice = new BN(transaction.gasPrice * 1e18)
+        const value = new BN(transaction.value * 1e18)
+        const gasLimit = new BN(transaction.gasLimit)
         const used = gasUsed.mul(gasPrice)
         allUsed = allUsed.add(used)
         console.log(`\tgasUsed  : ${gasUsed}`)
