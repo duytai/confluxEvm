@@ -32,7 +32,7 @@ class Conflux {
       ),
       transports: [
         new (transports.Console)({ level: 'debug' }),
-        new transports.File({ filename: 'logs/conflux.log', level: 'debug' })
+        // new transports.File({ filename: 'logs/conflux.log', level: 'debug' })
       ]
     })
   }
