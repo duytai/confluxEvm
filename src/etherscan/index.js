@@ -5,13 +5,14 @@ const Q = require('q')
 const cheerio = require('cheerio')
 const fs = require('fs')
 const path = require('path')
+const sleep = require('sleep')
 const Page = require('./page')
 
 class Etherscan {
   constructor() {
     this.contractList = new Page({
       url: 'https://etherscan.io/contractsVerified/',
-      curPageNumber: 0,
+      curPageNumber: 14,
       lastPageNumber: 20,
     })
     this.contractAsset = new Page({
@@ -64,6 +65,7 @@ class Etherscan {
             transactions: [],
           }
           for (let j = 0; j < transactionIds.length; j++) {
+            sleep.sleep(1)
             const transactionId = transactionIds[j]
             const transactionDetailURL = this.transactionDetail.nextPageWithParam(transactionId)
             const body = await this.httpGet(transactionDetailURL)
@@ -75,27 +77,27 @@ class Etherscan {
               .text()
               .split(' ')[0]
             )
-            assert(!isNaN(value))
+            if(isNaN(value)) continue
             const gasLimit = parseFloat(
               $('#ContentPlaceHolder1_spanGasLimit')
               .text()
               .replace(/,/g, '')
             )
-            assert(!isNaN(gasLimit))
+            if(isNaN(gasLimit)) continue 
             const gasUsed = parseFloat(
               $('#ContentPlaceHolder1_spanGasUsedByTxn')
               .text()
               .split(' ')[0]
               .replace(/,/g, '')
             )
-            assert(!isNaN(gasUsed))
+            if(isNaN(gasUsed)) continue
             const gasPrice = parseFloat(
               $('#ContentPlaceHolder1_spanGasPrice')
               .text()
               .split(' ')[0]
               .replace(/,/g, '')
             )
-            assert(!isNaN(gasPrice))
+            if(isNaN(gasPrice)) continue
             writeContent.transactions.unshift({
               payload,
               value,
