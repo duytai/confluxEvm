@@ -1453,3 +1453,67 @@
 [ethereum] [32minfo[39m: balance: 99150824972000000000
 [ethereum] [32minfo[39m: real Spend   : 1982354500000000
 [ethereum] [32minfo[39m: manual Spend : 1982354500000000
+[ethereum] [32minfo[39m: balance: 99150824972000000000
+[ethereum] [32minfo[39m: 	transact : 0x3aa4907a38ee3ffa485cdeaa7bb1a2b7241f5daa
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 1
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x60806040
+[ethereum] [32minfo[39m: 	gasUsed  : 566387
+[ethereum] [32minfo[39m: 	gasLimit : 4683950
+[ethereum] [32minfo[39m: 	gasPrice : 3500000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 1982354500000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: balance: 99148842617500000000
+[ethereum] [32minfo[39m: real Spend   : 1982354500000000
+[ethereum] [32minfo[39m: manual Spend : 1982354500000000
+[ethereum] [32minfo[39m: balance: 99148842617500000000
+[ethereum] [32minfo[39m: 	transact : 0x3aa4907a38ee3ffa485cdeaa7bb1a2b7241f5daa
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 1
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x60806040
+[ethereum] [32minfo[39m: 	gasUsed  : 566387
+[ethereum] [32minfo[39m: 	gasLimit : 4683950
+[ethereum] [32minfo[39m: 	gasPrice : 3500000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 1982354500000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: balance: 99146860263000000000
+[ethereum] [32minfo[39m: real Spend   : 1982354500000000
+[ethereum] [32minfo[39m: manual Spend : 1982354500000000
+[ethereum] [32minfo[39m: balance: 99146860263000000000
+[ethereum] [32minfo[39m: 	transact : 0x3aa4907a38ee3ffa485cdeaa7bb1a2b7241f5daa
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 1
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x60806040
+[ethereum] [32minfo[39m: 	gasUsed  : 566387
+[ethereum] [32minfo[39m: 	gasLimit : 4683950
+[ethereum] [32minfo[39m: 	gasPrice : 3500000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 1982354500000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: storage:0x3aa4907a38ee3ffa485cdeaa7bb1a2b7241f5daa:0x53a47bb7:0x0000000000000000000000000000000000000000000000000000000000000000
+[ethereum] [32minfo[39m: storage:0x3aa4907a38ee3ffa485cdeaa7bb1a2b7241f5daa:0x8da5cb5b:0x000000000000000000000000de910777c787903f78c89e7a0bf7f4c435cbb1fe
+[ethereum] [32minfo[39m: balance: 99144877908500000000
+[ethereum] [32minfo[39m: real Spend   : 1982354500000000
+[ethereum] [32minfo[39m: manual Spend : 1982354500000000
+[ethereum] [32minfo[39m: balance: 99144877908500000000
+[ethereum] [32minfo[39m: 	transact : 0x3aa4907a38ee3ffa485cdeaa7bb1a2b7241f5daa
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 1
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x60806040
+[ethereum] [32minfo[39m: 	gasUsed  : 566387
+[ethereum] [32minfo[39m: 	gasLimit : 4683950
+[ethereum] [32minfo[39m: 	gasPrice : 3500000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 1982354500000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: storage,0x3aa4907a38ee3ffa485cdeaa7bb1a2b7241f5daa,0x53a47bb7,0x0000000000000000000000000000000000000000000000000000000000000000
+[ethereum] [32minfo[39m: storage,0x3aa4907a38ee3ffa485cdeaa7bb1a2b7241f5daa,0x8da5cb5b,0x000000000000000000000000de910777c787903f78c89e7a0bf7f4c435cbb1fe
+[ethereum] [32minfo[39m: balance: 99142895554000000000
+[ethereum] [32minfo[39m: real Spend   : 1982354500000000
+[ethereum] [32minfo[39m: manual Spend : 1982354500000000

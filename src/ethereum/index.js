@@ -114,7 +114,8 @@ class Ethereum {
     let allUsed = new BN(0)
     while (contractCount < contractFiles.length) {
       let contractAddress = null
-      this.logger.info(`\ttransact : ${contractFiles[contractCount].slice(-47).slice(0, -5)}`)
+      let orig = contractFiles[contractCount].slice(-47).slice(0, -5)
+      this.logger.info(`\ttransact : ${orig}`)
       const jsonFormat = JSON.parse(fs.readFileSync(contractFiles[contractCount], 'utf8'))
       const { transactions, reading } = jsonFormat
       let txIdx = 0
@@ -156,8 +157,9 @@ class Ethereum {
       let readIdx = 0
       while (readIdx < reading.length && contractAddress) {
         const r = await this.callTransaction(reading[readIdx], contractAddress)
-        console.log(reading[readIdx])
-        console.log(r)
+        const d = `storage,${orig},${reading[readIdx].slice(0, 10)},${r}`
+        this.logger.info(d)
+        fs.appendFileSync('logs/eth_storage.txt', `${d}\n`)
         readIdx ++
       }
       contractCount ++
