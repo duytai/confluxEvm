@@ -9,6 +9,7 @@ const EthereumTx = require('ethereumjs-tx').Transaction
 const util = require('ethereumjs-util')
 const BN = require('bn.js')
 const sleep = require('sleep')
+const Web3 = require('web3')
 const dotenv = require('dotenv')
 
 const { combine, timestamp, label, prettyPrint, printf } = format
@@ -21,6 +22,7 @@ class Ethereum {
     this.privateKey = Buffer.from(ETHEREUM_PRIVATE_KEY, 'hex')
     this.contractsDir = path.join(__dirname, '../../contracts')
     this.address = `0x${util.privateToAddress(this.privateKey).toString('hex')}`
+    this.web3 = new Web3(this.rpcURL)
     this.logger = createLogger({
       format: combine(
         format.colorize(),
@@ -73,6 +75,11 @@ class Ethereum {
     })
   }
 
+  async callTransaction(payload, contractAddress) {
+    const p = { to: contractAddress, data: payload.slice(0, 10).slice(0, 10) }
+    return this.web3.eth.call(p)
+  }
+
   async sendTransaction(transaction, contractAddress) {
     const { payload, gasPrice, gasLimit, value } = transaction
     const txCount = await this.getTransactionCount()
@@ -102,7 +109,6 @@ class Ethereum {
     const contractFiles = fs
       .readdirSync(this.contractsDir)
       .map(p => path.join(this.contractsDir, p))
-      .slice(1, 2)
     let contractCount = 0 
     let txCount = 0
     let allUsed = new BN(0)
@@ -110,7 +116,7 @@ class Ethereum {
       let contractAddress = null
       this.logger.info(`\ttransact : ${contractFiles[contractCount].slice(-47).slice(0, -5)}`)
       const jsonFormat = JSON.parse(fs.readFileSync(contractFiles[contractCount], 'utf8'))
-      const { transactions } = jsonFormat
+      const { transactions, reading } = jsonFormat
       let txIdx = 0
       while (txIdx < transactions.length) {
         txCount ++
@@ -132,7 +138,7 @@ class Ethereum {
           sleep.sleep(1)
           receipt = await this.getReceipt(hash)
         }
-        contractAddress = receipt.result.contractCreated || contractAddress
+        contractAddress = receipt.result.contractAddress || contractAddress
         const gasUsed = new BN(receipt.result.gasUsed.slice(2), 16)
         const gasPrice = new BN(transaction.gasPrice * 1e18)
         const value = new BN(0)
@@ -146,6 +152,13 @@ class Ethereum {
         this.logger.info(`\tspend    : ${used}`)
         this.logger.info('\t---------------------')
         txIdx ++
+      }
+      let readIdx = 0
+      while (readIdx < reading.length && contractAddress) {
+        const r = await this.callTransaction(reading[readIdx], contractAddress)
+        console.log(reading[readIdx])
+        console.log(r)
+        readIdx ++
       }
       contractCount ++
     }
