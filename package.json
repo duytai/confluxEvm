@@ -12,6 +12,7 @@
     "bn.js": "^5.1.1",
     "chalk": "^3.0.0",
     "cheerio": "^1.0.0-rc.3",
+    "conflux-web": "^1.35.1-alpha.0",
     "confluxjs-transaction": "^0.0.1-alpha.2",
     "dotenv": "^8.2.0",
     "ethereumjs-abi": "^0.6.8",

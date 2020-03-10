@@ -51,18 +51,18 @@ class Etherscan {
       for (let i = 0; i < addresses.length; i++) {
         const address = addresses[i]
         const transactionIds = []
-          const contractAssetURL = this.contractAsset.nextPageWithParam(address)
-          const body = await this.httpGet(contractAssetURL)
-          const $ = cheerio.load(body)
-          /// latest transaction ids
-          $('.hash-tag.text-truncate').each((id, aTag) => {
-            const transactionId = $(aTag).text()
-            if (transactionId.length == 66) {
-              if (!transactionIds.includes(transactionId)) {
-                transactionIds.push(transactionId)
-              }
+        const contractAssetURL = this.contractAsset.nextPageWithParam(address)
+        const body = await this.httpGet(contractAssetURL)
+        const $ = cheerio.load(body)
+        /// latest transaction ids
+        $('.hash-tag.text-truncate').each((id, aTag) => {
+          const transactionId = $(aTag).text()
+          if (transactionId.length == 66) {
+            if (!transactionIds.includes(transactionId)) {
+              transactionIds.push(transactionId)
             }
-          })
+          }
+        })
         /// access smart contract which has number of transactions <= 10
         if (transactionIds.length >= 0) {
           const writeContent = {

@@ -10,6 +10,7 @@ const ConfluxTx= require('confluxjs-transaction')
 const sleep = require('sleep')
 const util = require('ethereumjs-util')
 const dotenv = require('dotenv')
+const ConfluxWeb = require('conflux-web')
 
 const { combine, timestamp, label, prettyPrint, printf } = format
 const { parsed: { CFX_REMOTE, CFX_PRIVATE_KEY } } = dotenv.config()
@@ -21,6 +22,7 @@ class Conflux {
     this.privateKey = Buffer.from(CFX_PRIVATE_KEY, 'hex')
     this.contractsDir = path.join(__dirname, '../../contracts')
     this.address = `0x${util.privateToAddress(this.privateKey).toString('hex')}`
+    this.confluxWeb = new ConfluxWeb(this.rpcURL); 
     this.logger = createLogger({
       format: combine(
         format.colorize(),
@@ -68,6 +70,11 @@ class Conflux {
     })
   }
 
+  async callTransaction(payload, contractAddress) {
+    const p = { to: contractAddress, data: payload.slice(0, 10).slice(0, 10) }
+    return this.confluxWeb.cfx.call(p)
+  }
+
   async sendTransaction(transaction, contractAddress) {
     const { payload, gasPrice, gasLimit, value } = transaction
     const txCount = await this.getTransactionCount()
@@ -104,7 +111,6 @@ class Conflux {
     const contractFiles = fs
       .readdirSync(this.contractsDir)
       .map(p => path.join(this.contractsDir, p))
-      .slice(0, 2)
     let contractCount = 0 
     let txCount = 0
     let allUsed = new BN(0)
@@ -112,7 +118,7 @@ class Conflux {
       let contractAddress = null
       this.logger.info(`\ttransact : ${contractFiles[contractCount].slice(-47).slice(0, -5)}`)
       const jsonFormat = JSON.parse(fs.readFileSync(contractFiles[contractCount], 'utf8'))
-      const { transactions } = jsonFormat
+      const { transactions, reading } = jsonFormat
       let txIdx = 0
       while (txIdx < transactions.length) {
         txCount ++
@@ -123,15 +129,11 @@ class Conflux {
         this.logger.info(`\tsig      : ${transaction.payload.slice(0, 10)}`)
         const r = await this.sendTransaction(transaction, contractAddress)
         const hash = r.result
-        if (r.error) {
+        if (r.error || !hash) {
           this.logger.info(`ERROR: ${r.error.message}`)
           txIdx ++
           continue
         }
-        if (!hash) {
-          sleep.sleep(1)
-          continue
-        } 
         let receipt = { result: null }
         while (!receipt.result) {
           sleep.sleep(1)
@@ -151,6 +153,13 @@ class Conflux {
         this.logger.info(`\tspend    : ${used}`)
         this.logger.info('\t---------------------')
         txIdx ++
+      }
+      let readIdx = 0
+      while (readIdx < reading.length && contractAddress) {
+        const r = await this.callTransaction(reading[readIdx], contractAddress)
+        console.log(reading[readIdx])
+        console.log(r)
+        readIdx ++
       }
       contractCount ++
     }
