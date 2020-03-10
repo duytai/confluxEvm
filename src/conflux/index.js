@@ -35,6 +35,7 @@ class Conflux {
         // new transports.File({ filename: 'logs/conflux.log', level: 'debug' })
       ]
     })
+    console.log(this.address)
   }
 
   httpPost(data) {
@@ -103,6 +104,7 @@ class Conflux {
     const contractFiles = fs
       .readdirSync(this.contractsDir)
       .map(p => path.join(this.contractsDir, p))
+      .slice(0, 2)
     let contractCount = 0 
     let txCount = 0
     let allUsed = new BN(0)

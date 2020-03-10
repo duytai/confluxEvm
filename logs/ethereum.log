@@ -1,0 +1,1294 @@
+[ethereum] [32minfo[39m: balance: 62670848102380204760
+[ethereum] [32minfo[39m: 	transact : 0x00FA11309B63c38ffB77aDa346b82CE66E404De9
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 1
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x60a06040
+[ethereum] [32minfo[39m: 	gasUsed  : 1710446
+[ethereum] [32minfo[39m: 	gasLimit : 80000000
+[ethereum] [32minfo[39m: 	gasPrice : 20000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 34208920000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	transact : 0x00c0443f42932d9efe27e64409b21d2e48928d66
+[ethereum] [32minfo[39m: 	contract : 1
+[ethereum] [32minfo[39m: 	transact : 2
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x60806040
+[ethereum] [32minfo[39m: balance: 62630899777380204760
+[ethereum] [32minfo[39m: 	transact : 0x00FA11309B63c38ffB77aDa346b82CE66E404De9
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 1
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x60a06040
+[ethereum] [32minfo[39m: 	gasUsed  : 1710446
+[ethereum] [32minfo[39m: 	gasLimit : 80000000
+[ethereum] [32minfo[39m: 	gasPrice : 20000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 34208920000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	transact : 0x00c0443f42932d9efe27e64409b21d2e48928d66
+[ethereum] [32minfo[39m: 	contract : 1
+[ethereum] [32minfo[39m: 	transact : 2
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x60806040
+[ethereum] [32minfo[39m: 	gasUsed  : 1147881
+[ethereum] [32minfo[39m: 	gasLimit : 9453450
+[ethereum] [32minfo[39m: 	gasPrice : 5000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 5739405000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 1
+[ethereum] [32minfo[39m: 	transact : 3
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x92eefe9b
+[ethereum] [32minfo[39m: 	gasUsed  : 667260
+[ethereum] [32minfo[39m: 	gasLimit : 667260
+[ethereum] [32minfo[39m: 	gasPrice : 4000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 2669040000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 1
+[ethereum] [32minfo[39m: 	transact : 4
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 18000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 18000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 1
+[ethereum] [32minfo[39m: 	transact : 5
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 10000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 10000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 1
+[ethereum] [32minfo[39m: 	transact : 6
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 10000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 10000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 1
+[ethereum] [32minfo[39m: 	transact : 7
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 6000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 6000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 1
+[ethereum] [32minfo[39m: 	transact : 8
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 10000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 10000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: balance: 62536784637380204760
+[ethereum] [32minfo[39m: real Spend   : 94115140000000000
+[ethereum] [32minfo[39m: manual Spend : 96617365000000000
+[ethereum] [32minfo[39m: balance: 62536784637380204760
+[ethereum] [32minfo[39m: 	transact : 0x00FA11309B63c38ffB77aDa346b82CE66E404De9
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 1
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x60a06040
+[ethereum] [32minfo[39m: balance: 62502575717380204760
+[ethereum] [32minfo[39m: 	transact : 0x00FA11309B63c38ffB77aDa346b82CE66E404De9
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 1
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x60a06040
+[ethereum] [32minfo[39m: 	gasUsed  : 1710446
+[ethereum] [32minfo[39m: 	gasLimit : 80000000
+[ethereum] [32minfo[39m: 	gasPrice : 20000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 34208920000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: balance: 62468366797380204760
+[ethereum] [32minfo[39m: real Spend   : 34208920000000000
+[ethereum] [32minfo[39m: manual Spend : 34208920000000000
+[ethereum] [32minfo[39m: balance: 62468366797380204760
+[ethereum] [32minfo[39m: 	transact : 0x00c0443f42932d9efe27e64409b21d2e48928d66
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 1
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x60806040
+[ethereum] [32minfo[39m: 	gasUsed  : 1147881
+[ethereum] [32minfo[39m: 	gasLimit : 9453450
+[ethereum] [32minfo[39m: 	gasPrice : 5000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 5739405000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 2
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x92eefe9b
+[ethereum] [32minfo[39m: 	gasUsed  : 667260
+[ethereum] [32minfo[39m: 	gasLimit : 667260
+[ethereum] [32minfo[39m: 	gasPrice : 4000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 2669040000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 3
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 18000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 18000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 4
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 10000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 10000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 5
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 10000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 10000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 6
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 6000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 6000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 7
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 10000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 10000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: balance: 62408460577380204760
+[ethereum] [32minfo[39m: real Spend   : 59906220000000000
+[ethereum] [32minfo[39m: manual Spend : 62408445000000000
+[ethereum] [32minfo[39m: balance: 62408460577380204760
+[ethereum] [32minfo[39m: 	transact : 0x00c0443f42932d9efe27e64409b21d2e48928d66
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 1
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x60806040
+[ethereum] [32minfo[39m: 	gasUsed  : 1147881
+[ethereum] [32minfo[39m: 	gasLimit : 9453450
+[ethereum] [32minfo[39m: 	gasPrice : 5000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 5739405000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 2
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x92eefe9b
+[ethereum] [32minfo[39m: 	gasUsed  : 667260
+[ethereum] [32minfo[39m: 	gasLimit : 667260
+[ethereum] [32minfo[39m: 	gasPrice : 4000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 2669040000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 3
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: balance: 62384554357380204760
+[ethereum] [32minfo[39m: 	transact : 0x00c0443f42932d9efe27e64409b21d2e48928d66
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 1
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x60806040
+[ethereum] [32minfo[39m: 	gasUsed  : 1147881
+[ethereum] [32minfo[39m: 	gasLimit : 9453450
+[ethereum] [32minfo[39m: 	gasPrice : 5000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 5739405000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 2
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x92eefe9b
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 3
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 4
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 5
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 6
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 7
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: balance: 62324648137380204760
+[ethereum] [32minfo[39m: real Spend   : 59906220000000000
+[ethereum] [32minfo[39m: manual Spend : 5739405000000000
+[ethereum] [32minfo[39m: balance: 62324648137380204760
+[ethereum] [32minfo[39m: 	transact : 0x00c0443f42932d9efe27e64409b21d2e48928d66
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 1
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x60806040
+[ethereum] [32minfo[39m: 	gasUsed  : 1147881
+[ethereum] [32minfo[39m: 	gasLimit : 9453450
+[ethereum] [32minfo[39m: 	gasPrice : 5000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 5739405000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 2
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x92eefe9b
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 667260
+[ethereum] [32minfo[39m: 	gasLimit : 667260
+[ethereum] [32minfo[39m: 	gasPrice : 4000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 2669040000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 3
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 18000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 18000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 4
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 10000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 10000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 5
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 10000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 10000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 6
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 6000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 6000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 7
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 10000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 10000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: balance: 62264741917380204760
+[ethereum] [32minfo[39m: real Spend   : 59906220000000000
+[ethereum] [32minfo[39m: manual Spend : 62408445000000000
+[ethereum] [32minfo[39m: balance: 62264741917380204760 | 36018cce190d258d8
+[ethereum] [32minfo[39m: 	transact : 0x00c0443f42932d9efe27e64409b21d2e48928d66
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 1
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x60806040
+[ethereum] [32minfo[39m: 	gasUsed  : 1147881
+[ethereum] [32minfo[39m: 	gasLimit : 9453450
+[ethereum] [32minfo[39m: 	gasPrice : 5000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 5739405000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 2
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x92eefe9b
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 667260
+[ethereum] [32minfo[39m: 	gasLimit : 667260
+[ethereum] [32minfo[39m: 	gasPrice : 4000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 2669040000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 3
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 18000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 18000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 4
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 10000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 10000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 5
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 10000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 10000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 6
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 6000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 6000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 7
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 10000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 10000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: balance: 62204835697380204760 | 35f43f87dcde2a0d8
+[ethereum] [32minfo[39m: real Spend   : 59906220000000000
+[ethereum] [32minfo[39m: manual Spend : 62408445000000000
+[ethereum] [32minfo[39m: balance: 100000000000000000000 | 56bc75e2d63100000
+[ethereum] [32minfo[39m: 	transact : 0x00c0443f42932d9efe27e64409b21d2e48928d66
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 1
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x60806040
+[ethereum] [32minfo[39m: 	gasUsed  : 1147881
+[ethereum] [32minfo[39m: 	gasLimit : 9453450
+[ethereum] [32minfo[39m: 	gasPrice : 5000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 5739405000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 2
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x92eefe9b
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 667260
+[ethereum] [32minfo[39m: 	gasLimit : 667260
+[ethereum] [32minfo[39m: 	gasPrice : 4000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 2669040000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 3
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 18000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 18000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 4
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 10000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 10000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 5
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 10000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 10000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 6
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 6000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 6000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 7
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 10000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 10000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: balance: 99940093780000000000 | 56af289c9a0204800
+[ethereum] [32minfo[39m: real Spend   : 59906220000000000
+[ethereum] [32minfo[39m: manual Spend : 62408445000000000
+[ethereum] [32minfo[39m: balance: 99940093780000000000 | 56af289c9a0204800
+[ethereum] [32minfo[39m: 	transact : 0x00c0443f42932d9efe27e64409b21d2e48928d66
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 1
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x60806040
+[ethereum] [32minfo[39m: 	gasUsed  : 1147881
+[ethereum] [32minfo[39m: 	gasLimit : 9453450
+[ethereum] [32minfo[39m: 	gasPrice : 5000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 5739405000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 2
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x92eefe9b
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 667260
+[ethereum] [32minfo[39m: 	gasLimit : 667260
+[ethereum] [32minfo[39m: 	gasPrice : 4000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 2669040000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 3
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 18000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 18000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 4
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 10000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 10000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 5
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 10000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 10000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 6
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 6000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 6000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 7
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 10000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 10000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: balance: 99880187560000000000 | 56a1db565dd309000
+[ethereum] [32minfo[39m: real Spend   : 59906220000000000
+[ethereum] [32minfo[39m: manual Spend : 62408445000000000
+[ethereum] [32minfo[39m: balance: 99880187560000000000 | 56a1db565dd309000
+[ethereum] [32minfo[39m: balance: 99880187560000000000 | 56a1db565dd309000
+[ethereum] [32minfo[39m: 	transact : 0x00c0443f42932d9efe27e64409b21d2e48928d66
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 1
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x60806040
+[ethereum] [32minfo[39m: 	gasUsed  : 1147881
+[ethereum] [32minfo[39m: 	gasLimit : 9453450
+[ethereum] [32minfo[39m: 	gasPrice : 5000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 5739405000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: balance: 99874448155000000000 | 56a09517080f14e00
+[ethereum] [32minfo[39m: real Spend   : 5739405000000000
+[ethereum] [32minfo[39m: manual Spend : 5739405000000000
+[ethereum] [32minfo[39m: balance: 99874448155000000000 | 56a09517080f14e00
+[ethereum] [32minfo[39m: 	transact : 0x00c0443f42932d9efe27e64409b21d2e48928d66
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 1
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x60806040
+[ethereum] [32minfo[39m: 	gasUsed  : 1147881
+[ethereum] [32minfo[39m: 	gasLimit : 9453450
+[ethereum] [32minfo[39m: 	gasPrice : 5000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 5739405000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 2
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x92eefe9b
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 667260
+[ethereum] [32minfo[39m: 	gasLimit : 667260
+[ethereum] [32minfo[39m: 	gasPrice : 4000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 2669040000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: balance: 99868541935000000000 | 569f455c37fe09600
+[ethereum] [32minfo[39m: real Spend   : 5906220000000000
+[ethereum] [32minfo[39m: manual Spend : 8408445000000000
+[ethereum] [32minfo[39m: balance: 100000000000000000000 | 56bc75e2d63100000
+[ethereum] [32minfo[39m: 	transact : 0x00c0443f42932d9efe27e64409b21d2e48928d66
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 1
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x60806040
+[ethereum] [32minfo[39m: 	gasUsed  : 1147881
+[ethereum] [32minfo[39m: 	gasLimit : 9453450
+[ethereum] [32minfo[39m: 	gasPrice : 5000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 5739405000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 2
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x92eefe9b
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 667260
+[ethereum] [32minfo[39m: 	gasLimit : 667260
+[ethereum] [32minfo[39m: 	gasPrice : 4000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 2669040000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: balance: 99994093780000000000 | 56bb2628061ff4800
+[ethereum] [32minfo[39m: real Spend   : 5906220000000000
+[ethereum] [32minfo[39m: manual Spend : 8408445000000000
+[ethereum] [32minfo[39m: balance: 99994093780000000000 | 56bb2628061ff4800
+[ethereum] [32minfo[39m: 	transact : 0x00c0443f42932d9efe27e64409b21d2e48928d66
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 1
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x60806040
+[ethereum] [32minfo[39m: 	gasUsed  : 1147881
+[ethereum] [32minfo[39m: 	gasLimit : 9453450
+[ethereum] [32minfo[39m: 	gasPrice : 5000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 5739405000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 2
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x92eefe9b
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 667260
+[ethereum] [32minfo[39m: 	gasLimit : 667260
+[ethereum] [32minfo[39m: 	gasPrice : 250000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 166815000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: balance: 99988187560000000000 | 56b9d66d360ee9000
+[ethereum] [32minfo[39m: real Spend   : 5906220000000000
+[ethereum] [32minfo[39m: manual Spend : 5906220000000000
+[ethereum] [32minfo[39m: balance: 99988187560000000000 | 56b9d66d360ee9000
+[ethereum] [32minfo[39m: 	transact : 0x00c0443f42932d9efe27e64409b21d2e48928d66
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 1
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x60806040
+[ethereum] [32minfo[39m: 	gasUsed  : 1147881
+[ethereum] [32minfo[39m: 	gasLimit : 9453450
+[ethereum] [32minfo[39m: 	gasPrice : 5000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 5739405000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 2
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x92eefe9b
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 667260
+[ethereum] [32minfo[39m: 	gasLimit : 667260
+[ethereum] [32minfo[39m: 	gasPrice : 250000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 166815000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 3
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 250000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 250000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: balance: 99964281340000000000 | 56b48783ec9e8d800
+[ethereum] [32minfo[39m: real Spend   : 23906220000000000
+[ethereum] [32minfo[39m: manual Spend : 6156220000000000
+[ethereum] [32minfo[39m: balance: 99964281340000000000 | 56b48783ec9e8d800
+[ethereum] [32minfo[39m: 	transact : 0x00c0443f42932d9efe27e64409b21d2e48928d66
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 1
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x60806040
+[ethereum] [32minfo[39m: 	gasUsed  : 1147881
+[ethereum] [32minfo[39m: 	gasLimit : 9453450
+[ethereum] [32minfo[39m: 	gasPrice : 5000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 5739405000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 2
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x92eefe9b
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 667260
+[ethereum] [32minfo[39m: 	gasLimit : 667260
+[ethereum] [32minfo[39m: 	gasPrice : 4000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 2669040000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: balance: 99958375120000000000 | 56b337c91c8d82000
+[ethereum] [32minfo[39m: real Spend   : 5906220000000000
+[ethereum] [32minfo[39m: manual Spend : 8408445000000000
+[ethereum] [32minfo[39m: balance: 99958375120000000000 | 56b337c91c8d82000
+[ethereum] [32minfo[39m: 	transact : 0x00c0443f42932d9efe27e64409b21d2e48928d66
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 1
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x60806040
+[ethereum] [32minfo[39m: 	gasUsed  : 1147881
+[ethereum] [32minfo[39m: 	gasLimit : 9453450
+[ethereum] [32minfo[39m: 	gasPrice : 5000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 5739405000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 2
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x92eefe9b
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 667260
+[ethereum] [32minfo[39m: 	gasLimit : 667260
+[ethereum] [32minfo[39m: 	gasPrice : 2500000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 1668150000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: balance: 99952468900000000000 | 56b1e80e4c7c76800
+[ethereum] [32minfo[39m: real Spend   : 5906220000000000
+[ethereum] [32minfo[39m: manual Spend : 7407555000000000
+[ethereum] [32minfo[39m: balance: 99952468900000000000 | 56b1e80e4c7c76800
+[ethereum] [32minfo[39m: 	transact : 0x00c0443f42932d9efe27e64409b21d2e48928d66
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 1
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x60806040
+[ethereum] [32minfo[39m: 	gasUsed  : 1147881
+[ethereum] [32minfo[39m: 	gasLimit : 9453450
+[ethereum] [32minfo[39m: 	gasPrice : 5000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 5739405000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 2
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x92eefe9b
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 667260
+[ethereum] [32minfo[39m: 	gasLimit : 667260
+[ethereum] [32minfo[39m: 	gasPrice : 4000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 2669040000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: balance: 99946562680000000000 | 56b098537c6b6b000
+[ethereum] [32minfo[39m: real Spend   : 5906220000000000
+[ethereum] [32minfo[39m: manual Spend : 8408445000000000
+[ethereum] [32minfo[39m: balance: 99946562680000000000 | 56b098537c6b6b000
+[ethereum] [32minfo[39m: 	transact : 0x00c0443f42932d9efe27e64409b21d2e48928d66
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 1
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x60806040
+[ethereum] [32minfo[39m: balance: 99940823275000000000 | 56af521426a776e00
+[ethereum] [32minfo[39m: 	transact : 0x00c0443f42932d9efe27e64409b21d2e48928d66
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 1
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x60806040
+[ethereum] [32minfo[39m: 	gasUsed  : 1147881
+[ethereum] [32minfo[39m: 	gasLimit : 9453450
+[ethereum] [32minfo[39m: 	gasPrice : 5000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 5739405000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 2
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x92eefe9b
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: balance: 99934917055000000000 | 56ae025956966b600
+[ethereum] [32minfo[39m: 	transact : 0x00c0443f42932d9efe27e64409b21d2e48928d66
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 1
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x60806040
+[ethereum] [32minfo[39m: 	gasUsed  : 1147881
+[ethereum] [32minfo[39m: 	gasLimit : 9453450
+[ethereum] [32minfo[39m: 	gasPrice : 5000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 5739405000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 2
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x92eefe9b
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 667260
+[ethereum] [32minfo[39m: 	gasLimit : 667260
+[ethereum] [32minfo[39m: 	gasPrice : 250000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 166815000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: balance: 99929010835000000000 | 56acb29e86855fe00
+[ethereum] [32minfo[39m: real Spend   : 5906220000000000
+[ethereum] [32minfo[39m: manual Spend : 5906220000000000
+[ethereum] [32minfo[39m: balance: 99929010835000000000 | 56acb29e86855fe00
+[ethereum] [32minfo[39m: 	transact : 0x00c0443f42932d9efe27e64409b21d2e48928d66
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 1
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x60806040
+[ethereum] [32minfo[39m: 	gasUsed  : 1147881
+[ethereum] [32minfo[39m: 	gasLimit : 9453450
+[ethereum] [32minfo[39m: 	gasPrice : 5000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 5739405000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 2
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x92eefe9b
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 667260
+[ethereum] [32minfo[39m: 	gasLimit : 667260
+[ethereum] [32minfo[39m: 	gasPrice : 250000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 166815000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 3
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 1125000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 1125000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: balance: 99905104615000000000 | 56a763b53d1504600
+[ethereum] [32minfo[39m: real Spend   : 23906220000000000
+[ethereum] [32minfo[39m: manual Spend : 7031220000000000
+[ethereum] [32minfo[39m: balance: 99905104615000000000 | 56a763b53d1504600
+[ethereum] [32minfo[39m: 	transact : 0x00c0443f42932d9efe27e64409b21d2e48928d66
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 1
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x60806040
+[ethereum] [32minfo[39m: 	gasUsed  : 1147881
+[ethereum] [32minfo[39m: 	gasLimit : 9453450
+[ethereum] [32minfo[39m: 	gasPrice : 5000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 5739405000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 2
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x92eefe9b
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 667260
+[ethereum] [32minfo[39m: 	gasLimit : 667260
+[ethereum] [32minfo[39m: 	gasPrice : 4000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 2669040000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 3
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 18000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 18000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 4
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: balance: 99871198395000000000
+[ethereum] [32minfo[39m: 	transact : 0x00FA11309B63c38ffB77aDa346b82CE66E404De9
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 1
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x60a06040
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: revert
+[ethereum] [32minfo[39m: 	gasUsed  : 1710446
+[ethereum] [32minfo[39m: 	gasLimit : 80000000
+[ethereum] [32minfo[39m: 	gasPrice : 20000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 34208920000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	transact : 0x00c0443f42932d9efe27e64409b21d2e48928d66
+[ethereum] [32minfo[39m: 	contract : 1
+[ethereum] [32minfo[39m: 	transact : 2
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x60806040
+[ethereum] [32minfo[39m: 	gasUsed  : 1147881
+[ethereum] [32minfo[39m: 	gasLimit : 9453450
+[ethereum] [32minfo[39m: 	gasPrice : 5000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 5739405000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 1
+[ethereum] [32minfo[39m: 	transact : 3
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x92eefe9b
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 667260
+[ethereum] [32minfo[39m: 	gasLimit : 667260
+[ethereum] [32minfo[39m: 	gasPrice : 4000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 2669040000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 1
+[ethereum] [32minfo[39m: 	transact : 4
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 18000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 18000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 1
+[ethereum] [32minfo[39m: 	transact : 5
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 10000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 10000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 1
+[ethereum] [32minfo[39m: 	transact : 6
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 10000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 10000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 1
+[ethereum] [32minfo[39m: 	transact : 7
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 6000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 6000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 1
+[ethereum] [32minfo[39m: 	transact : 8
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 10000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 10000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: balance: 99777083255000000000
+[ethereum] [32minfo[39m: real Spend   : 94115140000000000
+[ethereum] [32minfo[39m: manual Spend : 96617365000000000
+[ethereum] [32minfo[39m: balance: 99777083255000000000
+[ethereum] [32minfo[39m: 	transact : 0x00FA11309B63c38ffB77aDa346b82CE66E404De9
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 1
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x60a06040
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: revert
+[ethereum] [32minfo[39m: 	gasUsed  : 1710446
+[ethereum] [32minfo[39m: 	gasLimit : 80000000
+[ethereum] [32minfo[39m: 	gasPrice : 20000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 34208920000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	transact : 0x00c0443f42932d9efe27e64409b21d2e48928d66
+[ethereum] [32minfo[39m: 	contract : 1
+[ethereum] [32minfo[39m: 	transact : 2
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x60806040
+[ethereum] [32minfo[39m: 	gasUsed  : 1147881
+[ethereum] [32minfo[39m: 	gasLimit : 9453450
+[ethereum] [32minfo[39m: 	gasPrice : 5000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 5739405000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 1
+[ethereum] [32minfo[39m: 	transact : 3
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x92eefe9b
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 667260
+[ethereum] [32minfo[39m: 	gasLimit : 667260
+[ethereum] [32minfo[39m: 	gasPrice : 4000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 2669040000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 1
+[ethereum] [32minfo[39m: 	transact : 4
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 18000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 18000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 1
+[ethereum] [32minfo[39m: 	transact : 5
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 10000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 10000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 1
+[ethereum] [32minfo[39m: 	transact : 6
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 10000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 10000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 1
+[ethereum] [32minfo[39m: 	transact : 7
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 6000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 6000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 1
+[ethereum] [32minfo[39m: 	transact : 8
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 10000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 10000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: balance: 99682968115000000000
+[ethereum] [32minfo[39m: real Spend   : 94115140000000000
+[ethereum] [32minfo[39m: manual Spend : 96617365000000000
+[ethereum] [32minfo[39m: balance: 100000000000000000000
+[ethereum] [32minfo[39m: 	transact : 0x00FA11309B63c38ffB77aDa346b82CE66E404De9
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 1
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x60a06040
+[ethereum] [32minfo[39m: 	gasUsed  : 1710446
+[ethereum] [32minfo[39m: 	gasLimit : 80000000
+[ethereum] [32minfo[39m: 	gasPrice : 20000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 34208920000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: balance: 99965791080000000000
+[ethereum] [32minfo[39m: real Spend   : 34208920000000000
+[ethereum] [32minfo[39m: manual Spend : 34208920000000000
+[ethereum] [32minfo[39m: balance: 99965791080000000000
+[ethereum] [32minfo[39m: 	transact : 0x00c0443f42932d9efe27e64409b21d2e48928d66
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 1
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x60806040
+[ethereum] [32minfo[39m: 	gasUsed  : 1147881
+[ethereum] [32minfo[39m: 	gasLimit : 9453450
+[ethereum] [32minfo[39m: 	gasPrice : 5000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 5739405000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 2
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x92eefe9b
+[ethereum] [32minfo[39m: 	gasUsed  : 667260
+[ethereum] [32minfo[39m: 	gasLimit : 667260
+[ethereum] [32minfo[39m: 	gasPrice : 4000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 2669040000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 3
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 18000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 18000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 4
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 10000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 10000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 5
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 10000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 10000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 6
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 6000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 6000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 7
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: 	gasUsed  : 1000000
+[ethereum] [32minfo[39m: 	gasLimit : 1000000
+[ethereum] [32minfo[39m: 	gasPrice : 10000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 10000000000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: balance: 99905884860000000000
+[ethereum] [32minfo[39m: real Spend   : 59906220000000000
+[ethereum] [32minfo[39m: manual Spend : 62408445000000000
+[ethereum] [32minfo[39m: balance: 99905884860000000000
+[ethereum] [32minfo[39m: 	transact : 0x00c0443f42932d9efe27e64409b21d2e48928d66
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 1
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x60806040
+[ethereum] [32minfo[39m: 	gasUsed  : 1147881
+[ethereum] [32minfo[39m: 	gasLimit : 9453450
+[ethereum] [32minfo[39m: 	gasPrice : 5000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 5739405000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 2
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x92eefe9b
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 3
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 4
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 5
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 6
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 7
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: balance: 99845978640000000000
+[ethereum] [32minfo[39m: real Spend   : 59906220000000000
+[ethereum] [32minfo[39m: manual Spend : 5739405000000000
+[ethereum] [32minfo[39m: balance: 99845978640000000000
+[ethereum] [32minfo[39m: 	transact : 0x00c0443f42932d9efe27e64409b21d2e48928d66
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 1
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x60806040
+[ethereum] [32minfo[39m: 	gasUsed  : 1147881
+[ethereum] [32minfo[39m: 	gasLimit : 9453450
+[ethereum] [32minfo[39m: 	gasPrice : 5000000000
+[ethereum] [32minfo[39m: 	value    : 0
+[ethereum] [32minfo[39m: 	spend    : 5739405000000000
+[ethereum] [32minfo[39m: 	---------------------
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 2
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x92eefe9b
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 3
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 4
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 5
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 6
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: 	contract : 0
+[ethereum] [32minfo[39m: 	transact : 7
+[ethereum] [32minfo[39m: 	to       : null
+[ethereum] [32minfo[39m: 	sig      : 0x96c0ec55
+[ethereum] [32minfo[39m: ERROR: VM Exception while processing transaction: stack underflow
+[ethereum] [32minfo[39m: balance: 99786072420000000000
+[ethereum] [32minfo[39m: real Spend   : 59906220000000000
+[ethereum] [32minfo[39m: manual Spend : 5739405000000000

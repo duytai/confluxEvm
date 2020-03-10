@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "c": "MODE=etherscan node src/index.js",
+    "down": "MODE=etherscan node src/index.js",
     "eth": "MODE=ethereum node src/index.js",
     "cfx": "MODE=conflux node src/index.js"
   },
@@ -14,6 +14,7 @@
     "cheerio": "^1.0.0-rc.3",
     "confluxjs-transaction": "^0.0.1-alpha.2",
     "dotenv": "^8.2.0",
+    "ethereumjs-abi": "^0.6.8",
     "ethereumjs-tx": "^2.1.2",
     "ethereumjs-util": "^6.2.0",
     "needle": "^2.4.0",

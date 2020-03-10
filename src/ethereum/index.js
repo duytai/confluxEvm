@@ -92,7 +92,7 @@ class Ethereum {
       method: 'eth_sendRawTransaction',
       params: [`0x${serializedTx}`]
     })
-    return txHash.result
+    return txHash
   }
 
   async sendTransactions() {
@@ -102,6 +102,7 @@ class Ethereum {
     const contractFiles = fs
       .readdirSync(this.contractsDir)
       .map(p => path.join(this.contractsDir, p))
+      .slice(1, 2)
     let contractCount = 0 
     let txCount = 0
     let allUsed = new BN(0)
@@ -118,7 +119,13 @@ class Ethereum {
         this.logger.info(`\ttransact : ${txCount}`)
         this.logger.info(`\tto       : ${contractAddress}`)
         this.logger.info(`\tsig      : ${transaction.payload.slice(0, 10)}`)
-        const hash = await this.sendTransaction(transaction, contractAddress)
+        const r = await this.sendTransaction(transaction, contractAddress)
+        const hash = r.result
+        if (r.error) {
+          this.logger.info(`ERROR: ${r.error.message}`)
+          txIdx ++
+          continue
+        }
         assert(hash)
         let receipt = { result: null }
         while (!receipt.result) {

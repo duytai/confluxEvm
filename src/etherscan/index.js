@@ -6,20 +6,25 @@ const cheerio = require('cheerio')
 const fs = require('fs')
 const path = require('path')
 const sleep = require('sleep')
+const abi = require('ethereumjs-abi')
+const util = require('ethereumjs-util')
 const Page = require('./page')
 
 class Etherscan {
   constructor() {
     this.contractList = new Page({
       url: 'https://etherscan.io/contractsVerified/',
-      curPageNumber: 14,
-      lastPageNumber: 20,
+      curPageNumber: 0,
+      lastPageNumber: 1,
     })
     this.contractAsset = new Page({
       url: 'https://etherscan.io/txs?a='
     })
     this.transactionDetail = new Page({
       url: 'https://etherscan.io/tx/'
+    })
+    this.contractReading = new Page({
+      url: 'https://etherscan.io/readContract?a=',
     })
   }
 
@@ -45,25 +50,41 @@ class Etherscan {
       $('.hash-tag.text-truncate').each((idx, aTag) => addresses.push($(aTag).text()))
       for (let i = 0; i < addresses.length; i++) {
         const address = addresses[i]
-        const contractAssetURL = this.contractAsset.nextPageWithParam(address)
-        const body = await this.httpGet(contractAssetURL)
-        const $ = cheerio.load(body)
         const transactionIds = []
-        /// latest transaction ids
-        $('.hash-tag.text-truncate').each((id, aTag) => {
-          const transactionId = $(aTag).text()
-          if (transactionId.length == 66) {
-            if (!transactionIds.includes(transactionId)) {
-              transactionIds.push(transactionId)
+          const contractAssetURL = this.contractAsset.nextPageWithParam(address)
+          const body = await this.httpGet(contractAssetURL)
+          const $ = cheerio.load(body)
+          /// latest transaction ids
+          $('.hash-tag.text-truncate').each((id, aTag) => {
+            const transactionId = $(aTag).text()
+            if (transactionId.length == 66) {
+              if (!transactionIds.includes(transactionId)) {
+                transactionIds.push(transactionId)
+              }
             }
-          }
-        })
+          })
         /// access smart contract which has number of transactions <= 10
-        if (transactionIds.length <= 10) {
+        if (transactionIds.length >= 0) {
           const writeContent = {
             address,
             transactions: [],
+            reading: [],
           }
+
+          const contractReadingURL = this.contractReading.nextPageWithParam(address)
+          const body = await this.httpGet(contractReadingURL)
+          const $ = cheerio.load(body)
+          $('.card').each((idx, card) => {
+            const r = $(card).find('.py-2').text().split(' ')[1] + '()'
+            const hasInput = $(card).find('input').length > 0
+            console.log(r)
+            if (!hasInput) {
+              let d = util.keccak256(Buffer.from(r)).toString('hex').slice(0, 8)
+              while (d.length < 64) d += '0'
+              writeContent.reading.push(`0x${d}`)
+            }
+          })
+          if (!writeContent.reading.length) continue
           for (let j = 0; j < transactionIds.length; j++) {
             sleep.sleep(1)
             const transactionId = transactionIds[j]
